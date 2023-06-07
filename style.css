@@ -36,18 +36,85 @@ main img {
 
 /* ---  Groups & Items --- */
 
+.groupWrap {
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+}
+
 .group {
   display: flex;
   flex-direction: column;
+  flex-grow: 2;
+}
+
+.itemWrap {
+  flex: 1;
+  margin: 5px;
+  flex-wrap: nowrap;
+  padding: 1%;
 }
 
 .item {
   flex: 1;
-  margin: 10px;
+  margin: 5px;
+  align-items: flex-start;
 }
+
 
 .item-double {
   flex: 2;
+}
+
+.item img {
+  width: 100%;
+}
+
+.item-double img{
+  width: 100%;
+}
+
+.grid-row img {
+  width: 100%;
+}
+
+.grid-column img{
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Groups and items (Desktop) */
+@media all and (min-width: 800px) {
+  section,
+  h1 {
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: row;
+    padding: 1%;
+  }
+
+  .grid-column {
+    display: flex;
+    flex: 1;
+    flex-direction: column; 
+    margin: 10px;
+  }
+
+  .grid-row {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+  }
 }
 
 /* -------  Navigation ------- */
@@ -81,6 +148,9 @@ header nav ul li a:hover {
 
 /* -------  Search Form ------- */
 form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border: 2px solid #ff385c;
   padding: 10px;
 }
@@ -92,7 +162,8 @@ form label {
 form select,
 form input {
   margin-bottom: 20px;
-  width: 180px;
+  width: 65%;
+  float: right;
 }
 
 form button {
