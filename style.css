@@ -92,7 +92,7 @@ li {
 }
 
 /* Groups and items (Desktop) */
-@media all and (min-width: 800px) {
+@media all and (min-width: 480px) {
   section,
   h1 {
     padding: 0 10%;
@@ -126,6 +126,7 @@ header {
 }
 
 .logo {
+  text-align: left;
   font-family: "Pangolin", cursive;
   font-size: 72px;
   color: #fff;

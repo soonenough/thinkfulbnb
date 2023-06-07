@@ -23,10 +23,10 @@
       <nav>
         <div class="itemWrap">
         <ul id="mainMenu">
-          <li><a>Stay</a></li>
-          <li><a>About</a></li>
-          <li><a>Ideas</a></li>
-          <li><a>Host</a></li>
+          <li><a href="#stay">Stay</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#ideas">Ideas</a></li>
+          <li><a href="#host">Host</a></li>
         </ul>
       </div>
       </nav>
@@ -51,9 +51,10 @@
               <label for="Depart">Depart</label>
               <input type="date" id="Depart" name="Depart">
             </div>
-            <div class="item">
-              <label for="Type">Type</label>
-                <select id="Type" name="Type">
+            <div class="group-row">
+              <div class="item">
+                  <label for="Type">Type</label>
+                  <select id="Type" name="Type">
                   <option value="Apartment">Apartment</option>
                   <option value="Barn">Barn</option>
                   <option value="Castle">Castle</option>
@@ -62,8 +63,9 @@
                   <option value="Yacht">Yacht</option>
                   <option value="Yurt">Yurt</option>
                 </select>
+              </div>
             </div>
-            <div class="item-double">
+            <div class="item">
               <button type="submit">Search</button>
             </div>
           </div>
