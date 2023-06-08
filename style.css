@@ -92,13 +92,35 @@ li {
 }
 
 /* Groups and items (Desktop) */
-@media all and (min-width: 480px) {
+@media all and (min-width: 800px) {
   section,
   h1 {
     padding: 0 10%;
   }
 
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-family: "Pangolin", cursive;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .itemWrap {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
   .group {
+    display: flex;
+    flex: 1;
     flex-direction: row;
     padding: 1%;
   }
@@ -115,6 +137,7 @@ li {
     flex: 1;
     flex-direction: row;
   }
+
 }
 
 /* -------  Navigation ------- */
@@ -126,7 +149,7 @@ header {
 }
 
 .logo {
-  text-align: left;
+  text-align: center;
   font-family: "Pangolin", cursive;
   font-size: 72px;
   color: #fff;
