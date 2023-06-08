@@ -230,7 +230,7 @@ footer p {
   .logo {
     font-size: 32px;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
   }
 
