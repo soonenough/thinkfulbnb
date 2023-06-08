@@ -167,38 +167,28 @@ footer p {
 /* Groups and items (Desktop) */
 @media all and (min-width: 480px) {
 
-  section,
-  #stay form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 10px;
-  }
-
-  form {
-    width: 100%;
-    max-width: 800px; /* Adjust the maximum width as desired */
+  .groupForm {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
   }
   
-  form .group {
-    flex: 1 1 auto;
-    margin: 10px;
-    display: flex;
-    flex-direction: row;
-  }
-  
-  form .item {
+  form label,
+  form input,
+  form select,
+  form button {
+    margin-right: 10px;
     margin-bottom: 10px;
   }
   
-  form button {
-    align-self: flex-end;
+  form .item:last-child {
+    margin-right: 0;
   }
+  
+  form button {
+    margin-bottom: 0;
+  }  
 
   header {
     display: flex;
@@ -207,9 +197,27 @@ footer p {
     padding: 0 30px;
   }
 
-  header nav {
+  header nav ul {
     display: flex;
-    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  header nav ul li {
+    flex: 1;
+    text-align: center;
+  }
+  
+  header nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  header nav ul li a:hover {
+    background-color: #ccc;
   }
 
   .logo {
@@ -243,10 +251,8 @@ footer p {
   .group {
     display: flex;
     flex-direction: row;
-    padding: 1%;
     align-items: center;
     flex-wrap: nowrap;
-    overflow-x: auto;
     justify-content: center;
   }
 
@@ -263,4 +269,5 @@ footer p {
   #ideas .item {
     margin-bottom: 20px;
   }
+
 }
