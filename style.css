@@ -91,69 +91,6 @@ li {
   margin-right: 10px;
 }
 
-/* Groups and items (Desktop) */
-@media all and (min-width: 800px) {
-  section,
-
-  #stay form {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 0px 10px;
-  }
-
-  h1 {
-    padding: 0 10%;
-  }
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .logo {
-    font-family: "Pangolin", cursive;
-    font-size: 20px;
-    color: #fff;
-  }
-
-  .item {
-    align-items: center;
-  }
-
-  .itemWrap {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  .group {
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-    padding: 1%;
-    align-items: center;
-  }
-
-  .grid-column {
-    display: flex;
-    flex: 1;
-    flex-direction: column; 
-    margin: 10px;
-  }
-
-  .grid-row {
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-  }
-
-}
-
 /* -------  Navigation ------- */
 
 header {
@@ -191,6 +128,7 @@ form {
   justify-content: space-between;
   border: 2px solid #ff385c;
   padding: 10px;
+  align-items: stretch;
 }
 
 form label {
@@ -226,3 +164,103 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+/* Groups and items (Desktop) */
+@media all and (min-width: 480px) {
+
+  section,
+  #stay form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  form {
+    width: 100%;
+    max-width: 800px; /* Adjust the maximum width as desired */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  form .group {
+    flex: 1 1 auto;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  form .item {
+    margin-bottom: 10px;
+  }
+  
+  form button {
+    align-self: flex-end;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+  }
+
+  header nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 24px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+
+  h1 {
+    padding: 0 10%;
+  }
+
+  .item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+    margin: 5px;
+  }
+
+  .itemWrap {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .group {
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: center;
+  }
+
+  #ideas .grid-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  #ideas .grid-column {
+    width: 48%;
+  }
+  
+  #ideas .item {
+    margin-bottom: 20px;
+  }
+}
