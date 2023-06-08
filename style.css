@@ -42,6 +42,12 @@ main img {
     flex-flow: row wrap;
 }
 
+.groupForm{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
+
 .group {
   display: flex;
   flex-direction: column;
@@ -169,6 +175,7 @@ footer p {
   .groupForm {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
